@@ -1,0 +1,524 @@
+$theme1: '../../images/themes/theme1.jpg';
+$theme3: '../../images/themes/theme3.jpg';
+$theme4: '../../images/themes/theme4.jpg';
+$theme5: '../../images/themes/theme5.jpg';
+$theme6: '../../images/themes/theme6.jpg';
+$theme-baoquan: '../../images/themes/theme-baoquan.png';
+$theme-shibei: '../../images/themes/theme-shibei.jpg';
+$theme-certificate: '../../images/themes/theme-certificate.jpg';
+
+$leftSidebarWidth: 320px;
+$rightSidebarWidth: 200px;
+$templateBarHeight: 150px;
+$gapMedium: 1cm;
+
+$brandColor: #4285f4;
+$primaryColor: #6D5CAE;
+$sideBarBgColor: #fff;
+$mainBgColor: #EEF4F6;
+//管理端编辑保全书页面样式
+.page {
+  position: relative;
+  width: 21cm; // A4 standards
+  min-height: 29.7cm;
+  margin: 0 1cm 0.5cm 0;
+  padding: 30px;
+  background-color: #FFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+}
+
+.cert-content {
+  position: relative;
+}
+
+.hidden-cover {
+  display: none;
+}
+
+.theme-1, .theme-2 {
+  background: #fff url($theme1) center 50px no-repeat;
+}
+
+.theme-3 {
+  background: url($theme3) center 50px no-repeat !important;
+  background-size: 595px 843px;
+
+  .cert-cover-bq-number {
+    padding-top: 10px !important;
+    color: #333 !important;
+  }
+
+  .cert-cover-content {
+    margin: 1.5cm 75px 0;
+  }
+
+  .cert-cover-footer {
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+  }
+}
+
+.theme-4 {
+  background: url($theme4) center 50px no-repeat !important;
+}
+
+.theme-5 {
+  background: url($theme5) center 50px no-repeat !important;
+}
+
+.theme-4, .theme-5 {
+  color: #fff;
+  background-size: 595px 843px;
+
+  .cert-cover-bq-number {
+    margin-top: 30px !important;
+    padding-top: 30px !important;
+    color: #fff !important;
+  }
+
+  .cert-cover-content {
+    margin-top: 0 !important;
+    text-align: center !important;
+
+    .table-content {
+      color: #fff;
+    }
+  }
+
+  .cert-cover-footer {
+    top: 720px !important;
+    color: #fff !important;
+
+    h5 {
+      color: #fff !important;
+    }
+  }
+
+  .bq-time {
+    position: absolute;
+    bottom: 250px;
+    font-size: 14px;
+    left: 300px;
+  }
+
+  h5 {
+    color: #fff;
+  }
+}
+
+.theme-shibei {
+  background-size: 630px 880px !important;
+  background: #fff url($theme-shibei) center 80px no-repeat !important;
+
+  p {
+    margin: 0;
+  }
+
+  td {
+    vertical-align: text-top;
+  }
+
+  .cert-cover-bq-number {
+    position: absolute;
+    top: 150px;
+    left: 180px;
+    color: #333 !important;
+  }
+
+  .cert-cover-footer {
+    display: flex;
+    position: static !important;
+    padding-top: 8px;
+    color: #333 !important;
+
+    .cert-cover-h5 {
+      width: 100px;
+      font-size: 14px !important;
+      font-weight: normal !important;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .cert-seal {
+    position: absolute;
+    top: 600px !important;
+    right: 220px !important;
+  }
+}
+
+.theme-certificate {
+  background: #fff url($theme-certificate) center 50px no-repeat !important;
+
+  .zh-name {
+    position: absolute;
+    top: 380px;
+    left: 155px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .en-name {
+    position: absolute;
+    top: 488px;
+    left: 260px;
+    width: 170px;
+    line-height: 16px;
+  }
+
+  .ID-card {
+    position: absolute;
+    top: 556px;
+    left: 238px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .create-time {
+    position: absolute;
+    top: 738px;
+    left: 212px;
+  }
+}
+
+.cert-cover {
+  position: relative;
+  padding: 220px 180px;
+  margin-top: 20px;
+  text-align: center;
+
+  .cert-cover-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  .cert-cover-bq-number {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .cert-cover-content {
+    text-align: left;
+    margin-top: $gapMedium*1.5;
+    table td {
+      padding: 5px 0;
+      min-width: 75px;
+      word-break: break-all;
+
+      span {
+        word-break: break-all;
+      }
+    }
+  }
+  .cert-cover-footer {
+    position: absolute;
+    top: 650px;
+    color: #555;
+    text-align: left;
+    font-size: 12px;
+    max-width: 440px;
+    ol, ul {
+      margin: 0;
+      padding-left: 1.5em;
+      list-style-type: decimal;
+    }
+  }
+  .cert-cover-h5 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .cert-seal {
+    position: absolute;
+    top: 300px;
+    right: 180px;
+    width: 115px;
+    height: 115px;
+    background-size: 100%;
+  }
+}
+
+.content table,
+.cert-layout table,
+.cert-content table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border: none !important;
+  border-collapse: collapse;
+  & > thead > tr > th,
+  & > tbody > tr > th,
+  & > tfoot > tr > th,
+  & > thead > tr > td,
+  & > tbody > tr > td,
+  & > tfoot > tr > td {
+    box-sizing: content-box;
+    padding: 8px 8px 8px 20px;
+    line-height: 34px;
+    word-break: break-all;
+    vertical-align: top;
+    border: #c0c9d0 2px solid !important;
+  }
+  label {
+    font-size: 13px;
+    color: #555;
+  }
+  .section-title {
+
+    span {
+      font-size: 16px !important;
+    }
+  }
+  .field {
+    padding: 3px 7px;
+    background-color: #f3fbf2;
+    border-radius: 2px;
+    border: 1px solid #DDECDB;
+    border-left: 2px solid #9AD492;
+  }
+  .cert-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    th {
+      text-align: center;
+      border: none;
+    }
+    td {
+      line-height: 60px !important;
+    }
+  }
+  .cert-meta {
+    font-size: 14px;
+    > th {
+      border: none !important;
+    }
+  }
+}
+
+
+//电子数据保管单
+.theme-6 {
+  background: url($theme6) center 50px no-repeat !important;
+  background-size: 595px 843px !important;
+  padding: 190px 100px !important;
+
+  .cert-cover-bq-number {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .cke_show_border {
+    margin: 0 auto;
+  }
+
+  .hash-word-box {
+    margin: 33px auto 0;
+    padding: 0 20px;
+    width: 440px;
+    height: 102px;
+    border: 1px dashed rgba(13,53,96,.16) !important;
+
+    .hash {
+      text-align: left;
+      font-size: 12px;
+      color: #005EAC;
+
+      .hash-title {
+        color: #999;
+
+      }
+    }
+  }
+
+  .cert-cover-content {
+    margin-top: 36px;
+  }
+
+  hr {
+    margin: 23px auto 0;
+    border: none;
+    width: 390px;
+    height: 2px;
+    background-color: rgba(13,53,96,1);
+    opacity: 0.16;
+  }
+
+  .cert-cover-footer {
+    margin: 0 auto 0 104px;
+    top: 656px;
+    width: 390px;
+
+    .cert-cover-h5 {
+      margin-bottom: 4px;
+      line-height:18px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(51,51,51,1);
+    }
+
+    .certificate-tips {
+      font-size:12px;
+      font-weight: 500;
+      color: rgba(153,153,153,1);
+      line-height:18px;
+      text-indent: 25px;
+    }
+  }
+
+  .cert-seal {
+    position: absolute;
+    top: 390px;
+    right: 152px;
+    width: 144px;
+    height: 111px;
+    background-size: 144px 111px !important;
+    background: url("../../images/themes/gongzheng-stamp.png") no-repeat;
+  }
+}
+
+//4.3.2开始唯一保全书
+.theme-baoquan {
+  background: url($theme-baoquan) center 50px no-repeat !important;
+  background-size: 705px 993px !important;
+  padding: 180px 100px !important;
+
+  .cert-cover-title {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .cert-cover-bq-number {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .att-number {
+    color: #999;
+  }
+
+  .baoquan-att-tip {
+    margin: 25px auto;
+    width: 500px;
+    text-indent:2em;
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+
+    .stress {
+      color: #333;
+    }
+  }
+
+  .hash-word-box {
+    margin: 33px auto 0;
+    padding: 0 20px;
+    width: 440px;
+    height: 102px;
+    border: 1px dashed rgba(13,53,96,.16) !important;
+
+    .hash {
+      padding-top: 18px;
+      display: flex;
+      text-align: left;
+      font-size: 12px;
+      color: #005EAC;
+
+      .hash-title {
+        color: #999;
+      }
+
+      .xfield {
+        display: block;
+        width: 276px;
+      }
+    }
+  }
+
+  .cert-cover-content {
+    margin-top: 36px;
+
+    table {
+      margin-left: 105px;
+
+      tr {
+        display: flex;
+
+        td {
+          &:first-child {
+            width: 74px;
+            color: #666;
+          }
+
+          &:last-child {
+            width: 360px;
+            color: #333;
+            word-break: break-word;
+          }
+        }
+      }
+
+      td {
+        min-width: auto !important;
+      }
+    }
+  }
+
+  hr {
+    margin: 23px auto 0;
+    border: none;
+    width: 500px;
+    height: 2px;
+    background-color: rgba(13,53,96,1);
+    opacity: 0.16;
+  }
+
+  .cert-seal {
+    position: absolute;
+    top: 450px;
+    right: 152px;
+    width: 144px;
+    height: 111px;
+    background-size: 144px 111px !important;
+    background: url("../../images/themes/new-att-sign.png") no-repeat;
+  }
+
+  .valicate-jigou-box {
+    margin-left: 48px;
+    margin-top: 30px;
+
+    p {
+      font-size: 14px;
+      color: #999;
+      text-align: left;
+    }
+
+    .jigou-img-box {
+      display: flex;
+      margin-top: 20px;
+
+      .valicate-jigou-one {
+        margin-right: 20px;
+        width: 120px;
+        height: 42px;
+        background-size: contain !important;
+        background: url("../../images/themes/qm-att-sign.png") no-repeat;
+      }
+
+      .valicate-jigou-two {
+        width: 120px;
+        height: 42px;
+        background-size: contain !important;
+        background: url("../../images/themes/hf-att-sign.png") no-repeat;
+      }
+    }
+  }
+}

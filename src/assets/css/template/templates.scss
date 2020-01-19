@@ -1,0 +1,25 @@
+@import "./template-theme.scss";
+
+.theme-1, .theme-2 {
+  .cert-seal {
+    background: url("../../images/baoquan-stamp.jpg") no-repeat;
+  }
+}
+
+.theme-3, .theme-shibei {
+  .cert-seal {
+    background: url("../../images/baoquan-stamp-3.jpg") no-repeat;
+  }
+}
+
+// .attestation-result {
+//   margin: 0 auto;
+//   max-width: 21cm;
+// }
+//
+// .attestation-actions {
+//   position: fixed;
+//   top: 100px;
+//   left: 50%;
+//   margin-left: 11cm;
+// }

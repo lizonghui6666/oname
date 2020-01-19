@@ -1,0 +1,22 @@
+.pdf {
+  .page {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    page-break-before: always;
+    font-family: Noto Sans CJK SC, Source Han Sans CN, sans-serif;
+    &.cert-cover {
+      padding: 220px 180px;
+    }
+    table {
+      page-break-inside: auto;
+    }
+    img {
+      display: inline-block;
+    }
+    tr, img {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+  }
+}

@@ -1,0 +1,333 @@
+@import "./config.scss";
+.data_core_page {
+  width: 100%;
+  height: 100%;
+  // overflow: auto;
+}
+
+.data_title {
+  display: flex;
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  margin-bottom: 15px;
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+    margin-left: 14px;
+    span {
+      color: rgb(255, 130, 58);
+      font-family: 微软雅黑;
+      font-weight: 900;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+}
+
+.data_search {
+  width: 300px;
+  height: 30px;
+  float: right;
+}
+
+.data_pore {
+  margin-bottom: 15px;
+}
+
+.data_core_Detail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header_home {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  align-items: center;
+  padding-left: $pageLeft;
+  padding-right: $pageRight;
+  .home_title {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 900;
+  }
+  .home_icon {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 900;
+    color: #ffff;
+  }
+  nav {
+    margin-left: 56px;
+    a {
+      font-weight: 900;
+      margin-left: 20px;
+      color: #fff;
+      position: relative;
+    }
+    .active::after {
+      content: "";
+      height: 2px;
+      display: inline-block;
+      width: 25px;
+      background: #1890ff;
+      padding-bottom: 4px;
+      position: absolute;
+      bottom: -13px;
+      left: 15px;
+    }
+  }
+}
+
+.home_info {
+  position: absolute !important;
+  display: flex;
+  right: $pageRight;
+  .user_icon {
+    font-weight: 900;
+    font-size: 14px;
+    margin-right: 7px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: rgb(230, 247, 255);
+    border-radius: 50%;
+  }
+  .user_info {
+    color: #fff;
+    margin-bottom: 2px;
+  }
+}
+
+.data_content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-left: $pageLeft;
+  padding-right: $pageRight;
+}
+
+.block_chain {
+  width: 100%;
+  height: 360px;
+  background: #f0f6f6;
+  padding: 20px 20px 30px 20px;
+  margin-top: 40px;
+  .block_chain_title {
+    height: 70px;
+    img {
+      float: left;
+    }
+    h1 {
+      float: left;
+      margin: 6px 0 0 16px;
+      font-size: 18px;
+      color: #138efe;
+    }
+  }
+
+  .chain {
+    margin-bottom: 25px;
+    display: flex;
+    span {
+      text-align: left;
+      color: #999;
+      width: 130px;
+      line-height: 20px;
+    }
+    p {
+      color: rgb(19, 142, 254);
+      overflow-wrap: break-word;
+      word-break: normal;
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .block_chain_item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 0 20px;
+    height: 115px;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+
+  .chain_name {
+    display: inline-table;
+    margin-right: 15px;
+    padding-right: 15px;
+    width: 144px;
+    height: 70px;
+    color: #666;
+    font-family: "Arial - Bold MT";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 80px;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  .chain_info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 615px;
+    height: 80px;
+  }
+  .hash {
+    color: #999;
+  }
+}
+.chain_sec {
+  margin-left: 5px !important;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  color: #fff !important;
+  text-align: center !important;
+  line-height: 16px !important;
+  border-radius: 8px !important;
+  background-color: #ccc !important;
+}
+.block_chain_code {
+  width: 100%;
+  height: 85px;
+  background: #f0f6f6;
+  padding: 30px 28px;
+  margin-top: 10px;
+  .evidence_chain_code {
+    font-size: 20px;
+    color: #138efe;
+    font-weight: 500;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 26px;
+  }
+
+  .evidence-chain-des {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+  }
+}
+.attestation-result {
+  position: relative;
+  width: 795px;
+  height: 1125px;
+  margin: 0 auto;
+  max-width: 21cm;
+  margin-top: 20px;
+}
+.page:last-child {
+  margin-bottom: 0;
+}
+
+.cert-cover {
+  position: relative !important;
+  padding: 220px 180px !important;
+  margin-top: 20px !important;
+  text-align: center;
+}
+
+.page {
+  position: relative;
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 1cm 0.5cm 0;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.cert-cover-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.cert-cover-bq-number {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.cert-cover-content {
+  text-align: left;
+  // margin-top: 1.5cm;
+  margin: 1.5cm 75px 0;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    td {
+      padding: 5px 0;
+      min-width: 75px;
+      word-break: break-all;
+    }
+  }
+}
+
+.cert-seal {
+  position: absolute;
+  top: 310px;
+  right: 180px;
+  width: 115px;
+  height: 115px;
+  background: url("../images/baoquan-stamp-3.jpg");
+  background-size: 100%;
+}
+
+.cert-cover-footer {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+  height: 180px;
+  color: #555;
+  text-align: left;
+  font-size: 12px;
+  max-width: 440px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+  .cert-cover-h5 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.att-qr-code {
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: absolute;
+  width: 560px;
+  top: 960px;
+  left: 100px;
+}
+
+.data_pagination {
+  text-align: right;
+  line-height: 60px;
+  margin-top: 20px;
+}

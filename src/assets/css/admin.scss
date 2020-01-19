@@ -1,0 +1,143 @@
+.admin_container,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.admin_title {
+  display: flex;
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  margin-bottom: 15px;
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+    margin-left: 14px;
+    margin-top: 4px;
+  }
+}
+
+.admin_btn {
+  margin-top: 10px;
+}
+
+.ant-modal-body {
+  padding: 12px 24px;
+}
+
+.default_template_box {
+  height: auto;
+  margin-top: 12px;
+  display: flex;
+
+  .default_template {
+    border-radius: 7px;
+    width: 150px !important;
+    height: 190px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(133, 139, 156);
+    padding: 24px 14px 14px 14px;
+    text-align: center !important;
+    margin-right: 6px;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+    p {
+      text-align: center;
+    }
+    h4 {
+      font-family: "Segoe UI";
+    }
+    .template_icon {
+      height: 2px;
+      background: #eee;
+      margin: 16px 0;
+    }
+    .template_success {
+      position: absolute;
+      right: 7px;
+      bottom: 7px;
+    }
+  }
+  .ant-btn {
+    cursor: pointer;
+    white-space: normal !important;
+  }
+}
+
+.template_btnBox {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.template_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  .add_template {
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(61, 129, 242);
+    border: 1px dashed rgb(197, 202, 213);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item_template {
+    width: 370px;
+    height: 190px;
+    background-color: rgb(249, 251, 254);
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    float: left;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+  }
+  .ant-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: default;
+    width: 370px;
+    padding-top: 6px;
+    box-shadow: none;
+    white-space: normal !important;
+  }
+  .ant-btn:hover,
+  .ant-btn:focus {
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .item_template_title {
+    width: 350px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgb(183, 193, 212);
+    span:nth-child(2) {
+      color: rgb(61, 129, 242);
+    }
+  }
+
+  .item_template_content {
+    margin-bottom: 15px;
+    margin-top: 13px;
+    p {
+      text-align: left;
+    }
+  }
+
+  .item_template_event {
+    margin-top: 20px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+}

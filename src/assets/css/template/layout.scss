@@ -1,0 +1,100 @@
+html {
+  &.has-left-sidebar {
+    margin-left: $leftSidebarWidth;
+    background-color: #eef4f6;
+  }
+  &.has-right-sidebar {
+    margin-right: $rightSidebarWidth;
+  }
+}
+
+body {
+  height: 100%;
+  font-family: 'Microsoft Yahei', Arial, 'Rhythm Heiti', sans-serif;
+  background-color: #f2f2f2;
+}
+
+a:link,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+#top-bar {
+  background: #555;
+  height: 0;
+  width: 100%;
+}
+
+#left-sidebar {
+  display: none;
+  position: fixed;
+  // z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: $leftSidebarWidth;
+  background-color: $sideBarBgColor;
+  border-right: 1px solid #ccc;
+  .sidebar-header {
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: $brandColor;
+    a {
+      color: #fff;
+      color: rgba(255, 255, 255, .7);
+      font-size: 12px;
+      margin: 0 20px;
+      > i {
+        font-size: 18px;
+        font-weight: 200;
+        font-style: normal;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+#right-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: $rightSidebarWidth;
+  color: #fff;
+  background-color: $sideBarBgColor;
+}
+
+#workspace {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  padding-left: 30px;
+  font-size: 14px;
+  background-color: $mainBgColor;
+}
+
+#constraints .submenu {
+  display: none;
+  position: absolute;
+  left: 101%;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+  z-index: 10000;
+}
+
+#constraints, #constraints_listbox {
+  overflow: inherit;
+}
+
+#constraints li:hover .submenu {
+  display: block;
+}

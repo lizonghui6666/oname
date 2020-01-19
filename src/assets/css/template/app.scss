@@ -1,0 +1,27 @@
+$leftSidebarWidth: 350px;
+$rightSidebarWidth: 200px;
+$templateBarHeight: 0px;
+$gapMedium: 30px;
+
+$brandColor: #4285f4;
+$primaryColor: #6D5CAE;
+$sideBarBgColor: #fff;
+$mainBgColor: #EEF4F6;
+
+$thumbnailBgColor1: #4caf50;
+$thumbnailBgColor2: #009688;
+$thumbnailBgColor3: #2196f3;
+$thumbnailBgColor4: #3f51b5;
+$thumbnailBgColor5: #673ab7;
+$thumbnailBgColor6: #9c27b0;
+$thumbnailBgColor7: #e91e63;
+$thumbnailBgColor8: #e73041;
+$thumbnailBgColor9: #f74820;
+
+@import './layout.scss';
+@import './ui-tree.scss';
+@import './template.scss';
+@import './format-settings.scss';
+@import "./templates.scss";
+@import "./pdf";
+@import "./modal";
